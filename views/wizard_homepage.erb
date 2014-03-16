@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+  <html lang = "en">
+  <html style= "font-family:courier new">
+
+      <head>
+        <title> Wizard News </title>
+        <!-- <link rel = "stylesheet" href = "lauren.css"> -->
+      </head>
+
+
+    <body link="#008B8B" vlink="#008B8B" alink="#FF7F50">
+  <div style ="background-color:#E0FFFF">
+  <div align= "center">
+    <h1><strong><font size = "7">WIZARD NEWS</font></strong></h1>
+  </div>
+   <div style="float:left">
+     
+
+       <h1><font color="#000000"></strong> Top Stories </strong></font></h1>
+          <p>
+              <% @articles.each do |article| %>
+                 <!-- <div><%=article.title%></div> -->
+                 <div><a href = "/<%=article.url%>"> <%=article.title%> </a></div>
+                 <!-- <div><%=article.description%></div> --> 
+              <%end%>  
+          </p>
+          <img src= "http://ps188q.org/wp-content/uploads/2012/05/book-wizard.jpg">
+          <!-- <img src ="http://mrsi.usace.army.mil/images/wizard-256x256.png"> -->
+  </div>
+    
+  
+  <div align= "center">
+       <h1><font color="#000000"><strong>Submit an Article</strong></font></h1>
+       <p><font color="#000000">
+
+         <form action = "/create-article" method = "post">
+            <div>
+              <label for = "title"><strong> New Article </strong></label>
+              <input type = "text"  id = "article_home" name = "title">
+            </div>
+
+           <div>
+             <label for = "url"><strong> URL </strong></label>
+             <input type = "text"  id = "article_home" name = "url">
+           </div>
+
+           <div>
+             <label for = "description"><strong> Description </strong></label>
+             <textarea rows="20" id = "article_home" name = "description"></textarea>
+           </div>
+
+           <button type= "submit"/><font color="#000000"><strong>Wizard Me Up!</strong></font></button>
+      </div>
+
+  <img src ="http://www.packard.org/wp-content/uploads/2011/03/news.jpg">
+
+
+    <!-- <img src = "http://www.taylorswebsites.com/wp-content/uploads/2013/01/Unique-Article-Wizard.jpg"> -->
+
+<!--   <div style="float:right"> -->
+    <!-- <img src = "http://www.midlandrailway-butterley.co.uk/events/animatedwizard.gif"> -->
+<!--   </div> -->
+        
+ <!--    </div> -->
+    <!-- <img src= "http://stream1.gifsoup.com/view1/2247472/asdfcomp-wizard-o.gif"> -->
+           
+
+           <!-- <input type= "all articles"/> -->
+<!-- <a href="localhost:9393" class="small round button">Round Button</a> ????
+ -->     </form>
+      </font>
+      </p>
+    </div>
+    </div>
+  </body>
+</html>
+</html>
+
+

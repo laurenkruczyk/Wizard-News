@@ -1,0 +1,32 @@
+
+
+<!DOCTYPE html>
+  <html lang = "en">
+   <div align="center">
+   <html style= "font-family:courier new; background-color:#E0FFFF">
+
+      <head>
+        <title> Wizard Article </title>
+        <!-- <link rel = "stylesheet" href = "lauren.css"> -->
+      </head>
+
+      <body link="#008B8B" vlink="#008B8B" alink="#FF7F50">
+       
+        <h1><%= @article[0] %></h1>
+        <h3><%= @article[2] %></h3>
+
+        <a href="/">Home</a>
+        <p>
+            <% @articles.each do |article| %>
+               <!-- <div><%=article.title%></div> -->
+               <div><a href = "/<%=article.url%>"> <%=article.title%> </a></div>
+               <!-- <div><%=article.description%></div> --> 
+            <%end%>  
+        </p>
+
+        <img src= "http://www.fella-werke.de/media/images/News_765x350px.jpg">
+
+      </body>
+      </html>
+    </div>
+  </html>
